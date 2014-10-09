@@ -1,0 +1,14 @@
+   .SYNOPSIS
+      Creates a simple menu object that can be used to display a menu and return the value selected.
+
+
+   .EXAMPLE
+      $example = New-Menu -title "Example Menu" -selections @({"Selection 1" = "1"; "Selection 2" = "2"; "Selection 3" = "3"})
+      This creates a menu object with the title of "Menu" and the Selections of "Selection 1", "Selection 2", and "Selection 3" that returns a value of 1, 2, or 3, respectively.
+
+      $example.drawMenu()
+      This will draw the menu and return the value that has been selected.
+
+
+   .SYNTAX
+      New Menu -title <Title Name> -DisplayText <Text displayed between title and selections> -Selections <Hash indicating selection name and corresponding return value> -HighLightBGColor <color> -HighLightFGColor <color> -Padding <Int value>
